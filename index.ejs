@@ -1,0 +1,22 @@
+<h2>#SayTheirNames</h2>
+<p>The names of the people who have been murdered at the hands of police must be remembered. It is in their memory that people go to the streets and protest.</p>
+<hr/>
+<% for ( slug in public['say-their-names']._data ) {
+	var victim_obj = public['say-their-names']._data[slug],
+		victim_name = victim_obj.name,
+		victim_description = victim_obj.description,
+		victim_donation_link = victim_obj.donation_link,
+		victim_image_link = victim_obj.image_link;
+%>
+	<article class="victim-article">
+		<img class="victim-img img-responsive" src="<%=victim_image_link%>" alt="<%=victim_name%>'s Picture"/>
+		<h3><%=victim_name %></h3>
+		<p><%=victim_description %></p>
+		<% if ( victim_donation_link !== "" ) { %>
+			<h4>Donation Link</h4>
+			<a href="<%=victim_donation_link%>" target="_blank"><%=victim_donation_link%></a>
+		<% } %>
+	</article>
+	<hr/>
+<% } %>
+<p>Are we missing a name? <a href="https://github.com/Gnutrients/CW-SayTheirNames">Create a pull request</a>.

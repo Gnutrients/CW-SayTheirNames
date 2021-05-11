@@ -1,0 +1,14 @@
+{
+	"breonna-taylor" : {
+		"name" : "Breonna Taylor",
+		"description" : "Woman killed in her sleep by LMPD police officers in Louisville, KY. Breonna Taylor, a Grand Rapids native, moved to Louisville in order to pursue her dream of being an EMT and helping people who need it most. She was known to be a great person.",
+		"donation_link" : "https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor",
+		"image_link" : "https://ichef.bbci.co.uk/news/976/cpsprodpb/7355/production/_112252592_image.jpg"
+	},
+	"george-floyd" : {
+		"name" : "George Floyd",
+		"description" : "Man killed by disgraced officer Derek Chauvin. His murder sparked a national outrage that is still being carried on to this day",
+		"donation_link" : "",
+		"image_link" : ""
+	}
+}
